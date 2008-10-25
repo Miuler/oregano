@@ -1,7 +1,7 @@
 import os
 Import ('CEnv')
 
-SrcEnv = CEnv.Copy ()
+SrcEnv = CEnv.Clone ()
 
 LocaleDir         = '-DGNOMELOCALEDIR=\\""'+SrcEnv['DATADIR']+'/locale"\\"'
 OreganoGladeDir   = '-DOREGANO_GLADEDIR=\\""'+SrcEnv['OREGANODIR']+'/dialogs"\\"'

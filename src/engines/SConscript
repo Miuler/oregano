@@ -1,7 +1,7 @@
 
 Import ('SrcEnv')
 
-localEnv = SrcEnv.Copy ();
+localEnv = SrcEnv.Clone ();
 
 localEnv.Append (CCFLAGS = Split ("-I./src -I./src/model -I./src/sheet"))
 
